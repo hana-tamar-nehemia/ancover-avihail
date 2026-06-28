@@ -7,7 +7,7 @@ export function Services() {
     <section id="services" className="section section--alt">
       <div className="container">
         <header className="section__header">
-          <h2 className="section__title">שירותים</h2>
+          <h2 className="section__title">פתרונות</h2>
           <p className="section__subtitle">{servicesIntro}</p>
           <p className="services__hint">{servicesHint}</p>
         </header>

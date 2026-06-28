@@ -5,9 +5,9 @@ export function whatsappUrl(message: string): string {
   return `https://wa.me/${siteConfig.phoneRaw}?text=${encodeURIComponent(message)}`
 }
 
-/** הודעה מוכנה לפי שם שירות */
+/** הודעה מוכנה לפי שם פתרון */
 export function serviceMessage(serviceName: string): string {
-  return `שלום ישראל,\nאני מעוניין/ת בשירות ${serviceName} ואשמח לקבל הצעת מחיר. (רצוי להוסיף תמונה במידת הצורך)`
+  return `${siteConfig.whatsappGreeting}\nאני מעוניין/ת בפתרון ${serviceName} ואשמח לקבל הצעת מחיר.\nסוג פרויקט:\nמיקום:`
 }
 
 export function phoneUrl(): string {

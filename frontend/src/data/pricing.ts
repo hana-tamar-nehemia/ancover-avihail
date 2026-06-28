@@ -11,89 +11,45 @@ export interface PricingGroup {
 
 export const pricingGroups: PricingGroup[] = [
   {
-    title: 'חשמל',
+    title: 'הגנת דלתות',
     items: [
-      { id: 'light', service: 'תליית גוף תאורה', price: '250-300 ₪' },
-      {
-        id: 'ceiling-light',
-        service: 'התקנת גוף תאורה צמוד תקרה בתקרת בטון',
-        price: '250-350 ₪',
-      },
-      {
-        id: 'ceiling-light-extra',
-        service: 'התקנת גוף תאורה שני והלאה (מחיר פר גוף תאורה)',
-        price: '100-200 ₪',
-      },
-      {
-        id: 'ceiling-fan',
-        service: 'התקנת מאוורר תקרה אחד בתקרת בטון (לא כולל הרכבת המאוורר)',
-        price: '400-500 ₪',
-      },
-      {
-        id: 'electrical-point',
-        service: 'התקנת נקודת חשמל חדשה כולל חציבה עד 3 מטר',
-        price: '700-900 ₪',
-      },
+      { id: 'door-standard', service: 'כיסוי דלת פנים סטנדרטית', price: 'לפי הצעת מחיר' },
+      { id: 'door-entrance', service: 'הגנת דלת כניסה / עץ טבעי', price: 'לפי הצעת מחיר' },
+      { id: 'door-premium', service: 'הגנת דלתות יוקרתיות (מותאם אישית)', price: 'לפי הצעת מחיר' },
     ],
   },
   {
-    title: 'אינסטלציה',
+    title: 'הגנת חלונות',
     items: [
-      { id: 'bath-accessory', service: 'התקנת אביזרי אמבטיה', price: '200-400 ₪' },
-      { id: 'silicone', service: 'החלפת סיליקון במקלחת', price: '400-500 ₪' },
-      { id: 'faucet-basic', service: 'החלפת ברז, ללא עלות הברז', price: '300-400 ₪' },
-      {
-        id: 'faucet-stuck',
-        service: 'החלפת ברז תקוע / גישה בעייתית, ללא עלות הברז',
-        price: '450-700 ₪',
-      },
-      {
-        id: 'faucet-shower',
-        service: 'החלפת ברז פרח חמת פשוט, כולל עלות ברז',
-        price: '650-750 ₪',
-      },
-      {
-        id: 'faucet-nickel',
-        service: 'החלפת ברז ניל, כולל עלות הברז',
-        price: '350 ₪',
-      },
+      { id: 'window-standard', service: 'כיסוי חלון סטנדרטי (פנים)', price: 'לפי הצעת מחיר' },
+      { id: 'window-large', service: 'הגנת חלון גדול / ויטרינה', price: 'לפי הצעת מחיר' },
+      { id: 'window-facade', service: 'הגנת חלונות חוץ + פרופיל אלומיניום', price: 'לפי הצעת מחיר' },
     ],
   },
   {
-    title: 'התקנות',
+    title: 'הגנת ריצוף ומשטחים',
     items: [
-      { id: 'tv-70', service: "תליית טלוויזיה עד 70 אינץ'", price: '300-400 ₪' },
-      { id: 'tv-60', service: "התקנת טלוויזיה עד 60 אינץ'", price: '300-400 ₪' },
-      { id: 'shelf', service: 'התקנת מדף', price: '150-250 ₪' },
-      { id: 'floating-shelf', service: 'התקנת מדף צף מעץ מלא', price: '300-400 ₪' },
-      { id: 'picture', service: 'תליית תמונה או מראה', price: '300-350 ₪' },
-      { id: 'curtain', service: 'התקנת וילון הזזה בסיסי', price: '300-400 ₪' },
-      { id: 'bracken', service: 'תליית זרועות ברקן', price: '300-400 ₪' },
-      { id: 'lines', service: 'התקנת 4 חבלי כביסה ללא המתלה', price: '300-450 ₪' },
-      { id: 'closet', service: 'הרכבת ארון הזזה 2 דלתות', price: '400-600 ₪' },
-      { id: 'ikea', service: 'הרכבת רהיט איקאה', price: '300-500 ₪' },
-      { id: 'bed', service: 'הרכבת מיטה', price: '300-500 ₪' },
-      { id: 'desk', service: 'הרכבת שולחן או ארון משרדי', price: '300-500 ₪' },
+      { id: 'floor-parquet', service: 'כיסוי פרקט / עץ', price: 'לפי הצעת מחיר' },
+      { id: 'floor-tile', service: 'הגנת ריצוף שיש / פורצלן', price: 'לפי הצעת מחיר' },
+      { id: 'floor-stairs', service: 'הגנת מדרגות', price: 'לפי הצעת מחיר' },
     ],
   },
   {
-    title: 'תיקונים כלליים',
+    title: 'הגנת לובי וחללים',
     items: [
-      { id: 'handle', service: 'החלפת ידית דלת או מגירה', price: '200-300 ₪' },
-      { id: 'door-adjust', service: 'כיוון דלת ארון או מגירה', price: '200-250 ₪' },
-      { id: 'holes', service: 'סתימת חורים בקיר או גבס', price: '300-500 ₪' },
-      { id: 'grout', service: 'חידוש רובה או הדבקת אריח בודד', price: '300-450 ₪' },
-      { id: 'blinds', service: 'תיקון תריס חשמלי או ידני', price: '300-350 ₪' },
+      { id: 'lobby-floor', service: 'כיסוי ריצוף לובי', price: 'לפי הצעת מחיר' },
+      { id: 'lobby-walls', service: 'הגנת קירות ועמודים', price: 'לפי הצעת מחיר' },
+      { id: 'lobby-full', service: 'חבילת לובי מלאה (ריצוף + קירות)', price: 'לפי הצעת מחיר' },
     ],
   },
 ]
 
 export const pricingBundleNote =
-  'בביצוע מספר עבודות במקביל - תינתן הנחה משמעותית!'
+  'בפרויקטים גדולים ובחבילות משולבות — תינתן הנחה משמעותית!'
 
 export const pricingCtaText =
-  'רוצים לדעת בדיוק כמה זה יעלה? שלחו תמונה ותיאור קצר - בלי הפתעות.'
+  'כל פרויקט שונה — שלחו תוכנית, כמות יחידות ותיאור קצר ונחזור עם הצעת מחיר מדויקת.'
 
-export const pricingWhatsappLabel = 'שליחת תמונות ובקשה להצעת מחיר - מענה מהיר'
+export const pricingWhatsappLabel = 'שליחת פרטי פרויקט לקבלת הצעת מחיר'
 
-export const pricingQuoteMessage = `שלום ישראל,\nאשמח לקבל הצעת מחיר.\nמצרף/ת תמונה ותיאור של העבודה:`
+export const pricingQuoteMessage = `שלום Ancover,\nאשמח לקבל הצעת מחיר להגנה בפרויקט.\nסוג פרויקט:\nכמות דלתות/חלונות:\nמיקום:`

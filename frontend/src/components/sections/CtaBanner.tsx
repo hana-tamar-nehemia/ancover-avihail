@@ -4,16 +4,16 @@ import { WhatsAppIcon } from '../ui/WhatsAppIcon'
 import { phoneUrl, whatsappUrl } from '../../lib/whatsapp'
 import './CtaBanner.css'
 
-const message = `שלום ישראל,\nאשמח לקבל הצעת מחיר לעבודת הנדימן.`
+const message = `${siteConfig.whatsappGreeting}\nאשמח לקבל הצעת מחיר לפתרונות הגנה בפרויקט.`
 
 export function CtaBanner() {
   return (
     <section className="cta-banner" aria-label="קריאה לפעולה">
       <div className="container cta-banner__inner">
         <div className="cta-banner__text">
-          <h2 className="cta-banner__title">בואו נתחיל לתקן</h2>
+          <h2 className="cta-banner__title">מגינים על הפרויקט שלכם</h2>
           <p className="cta-banner__subtitle">
-            שלחו הודעה ב-WhatsApp או התקשרו
+            שלחו פרטי פרויקט ב-WhatsApp או התקשרו — נחזור עם הצעת מחיר
           </p>
         </div>
         <div className="cta-banner__actions">

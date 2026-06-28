@@ -2,32 +2,56 @@ export interface WorkItem {
   id: string
   title: string
   description: string
-  image: string
+  beforeImage: string
+  afterImage: string
 }
 
 const worksImage = (filename: string) => `/images/works/${filename}`
 
-/** כותרת ותיאור לפי שם הקובץ שהמשתמש נתן */
-function workFromFile(id: string, filename: string): WorkItem {
-  const title = filename.replace(/\.(jpe?g|png|webp)$/i, '')
-  return {
-    id,
-    title,
-    description: title,
-    image: worksImage(filename),
-  }
-}
+export const worksIntro =
+  'דוגמאות מהשטח — לפני ואחרי הגנה מקצועית בפרויקטי בנייה ושיפוץ'
 
 export const works: WorkItem[] = [
-  workFromFile('tv-mount', 'תליית טלוויזיה על זרוע.jpeg'),
-  workFromFile('curtains-track', 'תליית וילונות על מסילה רצה.jpeg'),
-  workFromFile('office-blind', 'תליית וילון למשרד.jpeg'),
-  workFromFile('lighting', 'התקנת גופי תאורה.png'),
-  workFromFile('closet', 'הרכב ארון הזזה.jpeg'),
-  workFromFile('aron-kodesh', 'בניית ארון קודש כולל ריפוד פנימי וקיבועו לקיר.png'),
-  workFromFile('pallet-seating', 'בניית פינת ישיבה מרפסודות.jpeg'),
-  workFromFile('panels', 'הדבקת פאנלים.jpeg'),
-  workFromFile('studio-cables', 'הסתרת כבלים באולפן לאורך הקיר.jpeg'),
-  workFromFile('chuppah', 'קיבוע עמודי חופה.jpeg'),
-  workFromFile('mailbox-sign', 'תליית תא דואר ושילוט בכניסה לבית.png'),
+  {
+    id: 'doors',
+    title: 'הגנת דלתות כניסה',
+    description: 'כיסוי מלא לדלתות יוקרתיות במהלך עבודות גמר — ללא נזק לגימור.',
+    beforeImage: worksImage('closet-before.svg'),
+    afterImage: worksImage('closet-after.svg'),
+  },
+  {
+    id: 'windows',
+    title: 'הגנת חלונות',
+    description: 'שמירה על זכוכית ופרופילים מפני טיח וצבע — בפרויקט יוקרתי.',
+    beforeImage: worksImage('curtain-before.svg'),
+    afterImage: worksImage('curtain-after.svg'),
+  },
+  {
+    id: 'lobby',
+    title: 'הגנת לובי בבניין מאוכלס',
+    description: 'הגנה אסתטית על ריצוף וקירות בלובי — ללא פגיעה במראה החלל.',
+    beforeImage: worksImage('wall-before.svg'),
+    afterImage: worksImage('wall-after.svg'),
+  },
+  {
+    id: 'flooring',
+    title: 'הגנת ריצוף ופרקט',
+    description: 'כיסוי מקצועי על פרקט וריצוף לאורך כל שלבי הבנייה.',
+    beforeImage: worksImage('blinds-before.svg'),
+    afterImage: worksImage('blinds-after.svg'),
+  },
+  {
+    id: 'kitchen',
+    title: 'הגנת מטבח',
+    description: 'הגנה על ארונות, משטחים וריצוף במהלך שיפוץ מטבח מלא.',
+    beforeImage: worksImage('bathroom-before.svg'),
+    afterImage: worksImage('bathroom-after.svg'),
+  },
+  {
+    id: 'facade',
+    title: 'הגנת חזית וזכוכית',
+    description: 'כיסוי חזיתות וחלונות חוץ — עמידות לתנאי שטח וקרני UV.',
+    beforeImage: worksImage('tv-before.svg'),
+    afterImage: worksImage('tv-after.svg'),
+  },
 ]

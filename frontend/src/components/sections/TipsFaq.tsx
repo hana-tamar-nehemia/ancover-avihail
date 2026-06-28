@@ -9,7 +9,7 @@ export function TipsFaq() {
       <div className="container">
         <header className="section__header">
           <h2 className="section__title">טיפים ושאלות נפוצות</h2>
-          <p className="section__subtitle">מידע שימושי לפני שמתחילים עבודה</p>
+          <p className="section__subtitle">מידע שימושי לפני תכנון ההגנה בפרויקט</p>
         </header>
 
         <div className="tips-faq__layout">

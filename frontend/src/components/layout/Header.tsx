@@ -25,7 +25,7 @@ export function Header() {
     <header className={`header ${scrolled ? 'header--scrolled' : 'header--top'}`}>
       <div className="container header__inner">
         <a href="#home" className="header__logo" onClick={closeMenu}>
-          <span className="header__logo-icon" aria-hidden="true">🔧</span>
+          <span className="header__logo-icon" aria-hidden="true">🛡️</span>
           <span className="header__logo-text">{siteConfig.headerBrand}</span>
         </a>
 

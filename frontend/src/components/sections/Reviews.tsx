@@ -51,7 +51,7 @@ export function Reviews() {
       <div className="container">
         <header className="section__header">
           <h2 className="section__title">ביקורות</h2>
-          <p className="section__subtitle">עשרות ביקורות מלקוחות מרוצים</p>
+          <p className="section__subtitle">מה אומרים קבלנים, יזמים ומנהלי פרויקטים</p>
         </header>
 
         <div className="reviews__categories" role="tablist" aria-label="סינון ביקורות לפי נושא">

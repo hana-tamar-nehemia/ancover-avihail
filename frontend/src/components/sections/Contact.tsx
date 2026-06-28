@@ -3,7 +3,7 @@ import { WhatsAppIcon } from '../ui/WhatsAppIcon'
 import { phoneUrl, whatsappUrl } from '../../lib/whatsapp'
 import './Contact.css'
 
-const contactMessage = `שלום ישראל,\nאשמח ליצור קשר לגבי עבודת הנדימן.`
+const contactMessage = `${siteConfig.whatsappGreeting}\nאשמח ליצור קשר לגבי פתרונות הגנה בפרויקט.`
 
 const contactItems = [
   {
@@ -55,7 +55,7 @@ export function Contact() {
       <div className="container">
         <header className="section__header">
           <h2 className="section__title">צור קשר</h2>
-          <p className="section__subtitle">זמינים לשאלות, הצעות מחיר ותיאום עבודות</p>
+          <p className="section__subtitle">זמינים להצעות מחיר, ייעוץ ותיאום הגעה לשטח</p>
         </header>
 
         <div className="contact__list">

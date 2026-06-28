@@ -4,7 +4,7 @@ import { WhatsAppIcon } from '../ui/WhatsAppIcon'
 import { phoneUrl, whatsappUrl } from '../../lib/whatsapp'
 import './Hero.css'
 
-const defaultMessage = `שלום ישראל,\nאשמח לקבל הצעת מחיר לעבודת הנדימן.`
+const defaultMessage = `${siteConfig.whatsappGreeting}\nאשמח לקבל הצעת מחיר לפתרונות הגנה בפרויקט שלי.`
 
 export function Hero() {
   return (
@@ -35,8 +35,8 @@ export function Hero() {
 
         <div className="hero__image-wrap">
           <img
-            src="/images/israel-hero.jpg"
-            alt={`${siteConfig.businessName} - הנדימן מקצועי`}
+            src="/images/hero-placeholder.svg"
+            alt={`${siteConfig.businessName} - פתרונות הגנה לאתרי בנייה`}
             className="hero__image"
             width={480}
             height={560}

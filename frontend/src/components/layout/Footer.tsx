@@ -8,7 +8,7 @@ export function Footer() {
     <footer id="contact" className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <span className="footer__logo">🔧 {siteConfig.businessName}</span>
+          <span className="footer__logo">🛡️ {siteConfig.businessName}</span>
           <p className="footer__tagline">{siteConfig.slogan}</p>
         </div>
 
