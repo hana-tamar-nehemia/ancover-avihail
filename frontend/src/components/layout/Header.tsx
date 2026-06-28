@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { navItems, siteConfig, trustBarItems } from '../../data/site'
+import { navItems, siteConfig } from '../../data/site'
 import { Button } from '../ui/Button'
 import { whatsappUrl } from '../../lib/whatsapp'
 import './Header.css'
@@ -27,20 +27,11 @@ export function Header() {
 
   return (
     <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
-      <div className="header__topbar">
-        <div className="container header__topbar-inner">
-          <span className="header__topbar-label">עובדים עם:</span>
-          <span className="header__topbar-items">
-            {trustBarItems.join(' · ')}
-          </span>
-        </div>
-      </div>
-
       <div className="header__main">
         <div className="container header__inner">
           <a href="#home" className="header__logo" onClick={closeMenu}>
             <img
-              src="/images/logo.svg"
+              src={siteConfig.logo}
               alt={siteConfig.businessName}
               className="header__logo-img"
               width={40}

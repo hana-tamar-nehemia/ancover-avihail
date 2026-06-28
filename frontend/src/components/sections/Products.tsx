@@ -4,7 +4,7 @@ import './Products.css'
 
 export function Products() {
   return (
-    <section id="products" className="section">
+    <section id="services" className="section">
       <div className="container">
         <header className="section__header">
           <p className="section__eyebrow">{productsIntro.eyebrow}</p>

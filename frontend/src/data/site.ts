@@ -3,6 +3,7 @@ export const siteConfig = {
   businessName: 'Ancover',
   headerBrand: 'Ancover',
   headerSubbrand: 'Surface Protection',
+  logo: '/images/logo.jpeg',
   title: 'Ancover | פתרונות הגנה מקצועיים לאתרי בנייה ושיפוץ',
   heroEyebrow: 'מומחים להגנה על משטחים באתרי בנייה',
   heroHeadline: 'נזק לא קורה מעצמו.',
@@ -14,8 +15,8 @@ export const siteConfig = {
     'שומרים על איכות הדלתות, החלונות, הריצוף והלוביים — מניעת נזקים, שריטות ולכלוך בזמן העבודות.',
   description:
     'מגוון פתרונות הגנה זמנית על משטחים ואלמנטים באתר הבנייה שלכם — דלתות, חלונות, ריצוף, פרקט, מדרגות, מטבחים, לוביים וחזיתות.',
-  phone: '050-000-0000',
-  phoneRaw: '972500000000',
+  phone: '053-670-8907',
+  phoneRaw: '972536708907',
   email: 'info@ancover.co.il',
   location: 'פרויקטים בנייה ושיפוץ בפריסה ארצית',
   instagram: '#',
@@ -40,8 +41,7 @@ export const siteConfig = {
 } as const
 
 export const navItems = [
-  { label: 'מוצרים', href: '#products' },
-  { label: 'פרויקטים', href: '#works' },
+  { label: 'שירותים', href: '#services' },
   { label: 'ביקורות', href: '#reviews' },
   { label: 'איך זה עובד', href: '#process' },
   { label: 'צור קשר', href: '#contact' },
@@ -58,7 +58,6 @@ export const footerStats = [
   '50,000+ מ"ר מוגנים',
   '30+ פרויקטים',
   'צוות התקנה פנימי',
-  'הגעה לשטח תוך 3 ימים',
 ] as const
 
 export const serviceAreas = [

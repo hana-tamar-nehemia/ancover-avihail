@@ -15,8 +15,8 @@ export function Risk() {
             <p className="risk__lead">{riskSection.lead}</p>
             <p className="risk__body">{riskSection.body}</p>
             <div className="risk__actions">
-              <Button variant="primary" href="#products">
-                לכל המוצרים
+              <Button variant="primary" href="#services">
+                לכל השירותים
               </Button>
               <Button variant="outline-cyan" href={phoneUrl()}>
                 {siteConfig.phone}

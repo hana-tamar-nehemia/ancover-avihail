@@ -9,10 +9,10 @@ export interface ProtectionProduct {
 const img = (name: string) => `/images/products/${name}`
 
 export const productsIntro = {
-  eyebrow: 'מוצרי הגנה',
+  eyebrow: 'שירותי הגנה',
   title: 'הגנה זמנית מותאמת לכל שטח',
   subtitle:
-    'מוצרים מתוכננים לשמור על איכות ותקינות כל אלמנט בפרויקט — מניעת נזקים, שריטות ולכלוך בזמן העבודות.',
+    'שירותים מקצועיים לשמירה על איכות ותקינות כל אלמנט בפרויקט — מניעת נזקים, שריטות ולכלוך בזמן העבודות.',
 }
 
 /** החליפי תמונות ב-public/images/products/ כשיהיו מוכנות */

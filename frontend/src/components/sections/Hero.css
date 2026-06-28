@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: calc(var(--topbar-height) + var(--header-height));
+  padding-top: var(--header-height);
   padding-bottom: 4rem;
   overflow: hidden;
 }
@@ -24,11 +24,12 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
+  /* gradient כהה רק בצד הטקסט (ימין ב-RTL) — התמונה נשארת גלויה משמאל */
   background: linear-gradient(
     to left,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.72) 42%,
-    rgba(255, 255, 255, 0.94) 100%
+    rgba(10, 22, 40, 0.1) 0%,
+    rgba(10, 22, 40, 0.45) 38%,
+    rgba(10, 22, 40, 0.72) 100%
   );
 }
 
@@ -46,7 +47,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-cyan-dark);
+  color: var(--color-cyan-bright);
   margin-bottom: 1.25rem;
 }
 
@@ -56,13 +57,14 @@
   line-height: 1.1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--color-navy);
+  color: #fff;
   margin-bottom: 1.25rem;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
 }
 
 .hero__title-accent {
   display: block;
-  color: var(--color-cyan);
+  color: var(--color-cyan-bright);
 }
 
 .hero__subline {
@@ -70,7 +72,7 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-navy-light);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 0.75rem;
 }
 
@@ -79,7 +81,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 2.5rem;
 }
 
@@ -103,7 +105,7 @@
 
 .hero__cta-hint {
   font-size: 0.78rem;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__contact {
@@ -118,20 +120,20 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-text-light);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__contact-phone,
 .hero__contact-email {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--color-navy);
+  color: #fff;
   transition: color 0.2s ease;
 }
 
 .hero__contact-phone:hover,
 .hero__contact-email:hover {
-  color: var(--color-cyan-dark);
+  color: var(--color-cyan-bright);
 }
 
 @media (max-width: 600px) {

@@ -17,7 +17,7 @@ export function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#home" className="footer__logo">
-            <img src="/images/logo.svg" alt={siteConfig.businessName} width={36} height={36} />
+            <img src={siteConfig.logo} alt={siteConfig.businessName} width={36} height={36} />
             <span>
               <span className="footer__logo-name">{siteConfig.headerBrand}</span>
               <span className="footer__logo-sub">{siteConfig.headerSubbrand}</span>
@@ -31,11 +31,11 @@ export function Footer() {
         </div>
 
         <div className="footer__col">
-          <h3 className="footer__col-title">מוצרים</h3>
+          <h3 className="footer__col-title">שירותים</h3>
           <ul>
             {productLinks.map((link) => (
               <li key={link}>
-                <a href="#products">{link}</a>
+                <a href="#services">{link}</a>
               </li>
             ))}
           </ul>
@@ -72,7 +72,7 @@ export function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>© {year} {siteConfig.businessName}. כל הזכויות שמורות.</p>
+          <p>© {year} כל הזכויות שמורות ל-tamar nehemia</p>
           <p>{serviceAreas.join(' · ')}</p>
         </div>
       </div>

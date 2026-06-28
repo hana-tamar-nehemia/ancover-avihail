@@ -36,7 +36,6 @@
   --shadow: 0 8px 24px rgba(10, 22, 40, 0.12);
   --shadow-lg: 0 16px 48px rgba(10, 22, 40, 0.18);
   --header-height: 72px;
-  --topbar-height: 32px;
   --container: 1200px;
   --transition: 0.2s ease;
 }
