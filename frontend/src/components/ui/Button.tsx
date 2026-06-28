@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes, ReactNode } from 'react'
 
-type Variant = 'whatsapp' | 'phone' | 'outline' | 'lime' | 'outline-light'
+type Variant = 'primary' | 'whatsapp' | 'phone' | 'outline' | 'outline-cyan' | 'lime' | 'outline-light'
 
 interface BaseProps {
   variant?: Variant

@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
-import { navItems, siteConfig } from '../../data/site'
+import { navItems, siteConfig, trustBarItems } from '../../data/site'
+import { Button } from '../ui/Button'
+import { whatsappUrl } from '../../lib/whatsapp'
 import './Header.css'
+
+const planMessage = `${siteConfig.whatsappGreeting}\nאשמח לבנות תוכנית הגנה לפרויקט שלי.\nסוג פרויקט:\nמיקום:`
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -22,36 +26,68 @@ export function Header() {
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <header className={`header ${scrolled ? 'header--scrolled' : 'header--top'}`}>
-      <div className="container header__inner">
-        <a href="#home" className="header__logo" onClick={closeMenu}>
-          <span className="header__logo-icon" aria-hidden="true">🛡️</span>
-          <span className="header__logo-text">{siteConfig.headerBrand}</span>
-        </a>
+    <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
+      <div className="header__topbar">
+        <div className="container header__topbar-inner">
+          <span className="header__topbar-label">עובדים עם:</span>
+          <span className="header__topbar-items">
+            {trustBarItems.join(' · ')}
+          </span>
+        </div>
+      </div>
 
-        <nav className="header__nav" aria-label="ניווט ראשי">
-          <ul className="header__nav-list">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <a href={item.href} className="header__nav-link">
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <div className="header__main">
+        <div className="container header__inner">
+          <a href="#home" className="header__logo" onClick={closeMenu}>
+            <img
+              src="/images/logo.svg"
+              alt={siteConfig.businessName}
+              className="header__logo-img"
+              width={40}
+              height={40}
+            />
+            <span className="header__logo-text">
+              <span className="header__logo-name">{siteConfig.headerBrand}</span>
+              <span className="header__logo-sub">{siteConfig.headerSubbrand}</span>
+            </span>
+          </a>
 
-        <button
-          type="button"
-          className={`header__burger ${menuOpen ? 'header__burger--open' : ''}`}
-          aria-label={menuOpen ? 'סגור תפריט' : 'פתח תפריט'}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen((prev) => !prev)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+          <nav className="header__nav" aria-label="ניווט ראשי">
+            <ul className="header__nav-list">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href} className="header__nav-link">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="header__actions">
+            <Button
+              variant="primary"
+              href={whatsappUrl(planMessage)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header__cta"
+            >
+              {siteConfig.ctaPlanLabel}
+            </Button>
+          </div>
+
+          <button
+            type="button"
+            className={`header__burger ${menuOpen ? 'header__burger--open' : ''}`}
+            aria-label={menuOpen ? 'סגור תפריט' : 'פתח תפריט'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
 
       <div
@@ -68,6 +104,16 @@ export function Header() {
               </li>
             ))}
           </ul>
+          <Button
+            variant="primary"
+            href={whatsappUrl(planMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="header__mobile-cta"
+            onClick={closeMenu}
+          >
+            {siteConfig.ctaPlanLabel}
+          </Button>
         </nav>
       </div>
 

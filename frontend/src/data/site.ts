@@ -1,8 +1,14 @@
 /** פרטי האתר והעסק - מקור אמת יחיד לכל המידע הכללי */
 export const siteConfig = {
   businessName: 'Ancover',
-  headerBrand: 'Ancover — הגנה באתרי בנייה',
+  headerBrand: 'Ancover',
+  headerSubbrand: 'Surface Protection',
   title: 'Ancover | פתרונות הגנה מקצועיים לאתרי בנייה ושיפוץ',
+  heroEyebrow: 'מומחים להגנה על משטחים באתרי בנייה',
+  heroHeadline: 'נזק לא קורה מעצמו.',
+  heroHeadlineAccent: 'הוא קורה כשלא מגינים.',
+  heroSubline: 'התקנת הגנה זמנית על משטחים ומערכות בידוד אבק',
+  heroTagline: 'מוכח. מקצועי. אמין.',
   tagline: 'פתרונות הגנה מקצועיים לאתרי בנייה ושיפוץ',
   slogan:
     'שומרים על איכות הדלתות, החלונות, הריצוף והלוביים — מניעת נזקים, שריטות ולכלוך בזמן העבודות.',
@@ -29,14 +35,36 @@ export const siteConfig = {
     'פתרונות הגנה לקבלנים',
   ],
   whatsappGreeting: 'שלום Ancover,',
+  ctaPlanLabel: 'בנה לי תוכנית הגנה',
+  ctaPlanHint: 'ביקור בשטח · תוכנית בכתב · ללא התחייבות',
 } as const
 
 export const navItems = [
-  { label: 'בית', href: '#home' },
-  { label: 'פתרונות', href: '#services' },
+  { label: 'מוצרים', href: '#products' },
   { label: 'פרויקטים', href: '#works' },
-  { label: 'מחירון', href: '#pricing' },
   { label: 'ביקורות', href: '#reviews' },
-  { label: 'טיפים ושאלות נפוצות', href: '#tips-faq' },
+  { label: 'איך זה עובד', href: '#process' },
   { label: 'צור קשר', href: '#contact' },
+] as const
+
+export const trustBarItems = [
+  'קבלנים מובילים',
+  'יזמי נדל"ן',
+  'פרויקטים מגורים',
+  'פרויקטים מסחריים',
+] as const
+
+export const footerStats = [
+  '50,000+ מ"ר מוגנים',
+  '30+ פרויקטים',
+  'צוות התקנה פנימי',
+  'הגעה לשטח תוך 3 ימים',
+] as const
+
+export const serviceAreas = [
+  'מרכז',
+  'שרון',
+  'ירושלים',
+  'דרום',
+  'צפון',
 ] as const

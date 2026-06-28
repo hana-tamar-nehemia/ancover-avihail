@@ -1,122 +1,146 @@
 .hero {
-  padding-top: calc(var(--header-height) + 3rem);
-  padding-bottom: 4rem;
-  background: #ffffff;
-  min-height: 88vh;
+  position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: calc(var(--topbar-height) + var(--header-height));
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.92) 0%,
+    rgba(255, 255, 255, 0.78) 45%,
+    rgba(240, 248, 255, 0.65) 100%
+  );
 }
 
 .hero__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__content {
+  max-width: 720px;
 }
 
 .hero__eyebrow {
-  display: inline-block;
-  padding: 0.35rem 1rem;
-  background: var(--color-bg-alt);
-  color: var(--color-text-light);
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  border: 1px solid var(--color-border);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-cyan-dark);
+  margin-bottom: 1.25rem;
 }
 
 .hero__title {
-  font-size: clamp(1.65rem, 4vw, 2.15rem);
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: var(--color-heading);
+  font-size: clamp(2rem, 5.5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  margin-bottom: 1.25rem;
 }
 
-.hero__title-sub {
+.hero__title-accent {
   display: block;
-  font-size: clamp(1.05rem, 2.5vw, 1.35rem);
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-top: 0.4rem;
+  color: var(--color-cyan);
 }
 
-.hero__description {
-  font-size: 0.95rem;
-  color: var(--color-text);
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  max-width: 480px;
+.hero__subline {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-navy-light);
+  margin-bottom: 0.75rem;
+}
+
+.hero__tagline {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: 2.5rem;
 }
 
 .hero__actions {
-  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
-.hero__phone-btn {
-  background: #fff;
-  border-color: #cbd5e1;
-  color: var(--color-heading);
-}
-
-.hero__phone-btn:hover {
-  background: var(--color-bg-alt);
-  border-color: #94a3b8;
-  color: var(--color-heading);
-}
-
-.hero__image-wrap {
+.hero__cta-group {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.hero__image {
-  width: 100%;
-  max-width: 420px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  object-fit: cover;
-  aspect-ratio: 4 / 5;
-  border: 1px solid var(--color-border);
+.hero__cta-btn {
+  padding: 1rem 1.75rem;
+  font-size: 0.85rem;
 }
 
-@media (max-width: 900px) {
-  .hero__inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+.hero__cta-hint {
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+}
 
-  .hero__description {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.hero__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.25rem;
+}
 
-  .hero__actions {
-    justify-content: center;
-  }
+.hero__contact-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
 
-  .hero__image-wrap {
-    order: -1;
-  }
+.hero__contact-phone,
+.hero__contact-email {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  transition: color 0.2s ease;
+}
 
-  .hero__image {
-    max-width: 280px;
-  }
+.hero__contact-phone:hover,
+.hero__contact-email:hover {
+  color: var(--color-cyan-dark);
 }
 
 @media (max-width: 600px) {
   .hero {
     min-height: auto;
-    padding-top: calc(var(--header-height) + 1.5rem);
-    padding-bottom: 2.5rem;
+    padding-bottom: 3rem;
   }
 
-  .hero__image {
-    max-width: 200px;
-    width: 58%;
+  .hero__actions {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
