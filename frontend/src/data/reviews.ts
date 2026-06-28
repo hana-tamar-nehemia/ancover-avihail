@@ -5,56 +5,59 @@ export interface Review {
   location: string
 }
 
+const placeholderText =
+  'הכיסויים עמידים לטיח וצבע, וההסרה בסוף לא השאירה שום סימן. כבר הזמנתי אותם לפרויקט הבא.'
+
 export const reviews: Review[] = [
   {
     id: '1',
-    author: 'דוד כהן',
+    author: 'דוד כ.',
     location: 'קבלן ראשי, תל אביב',
-    text: 'עבדנו עם Ancover בפרויקט יוקרתי של 120 יחידות. ההגנה על הדלתות והחלונות הייתה מדויקת — בסיום העבודות הכל נשאר חדש. מומלץ בחום לכל קבלן.',
+    text: placeholderText,
   },
   {
     id: '2',
-    author: 'מיכל אברהם',
+    author: 'מיכל א.',
     location: 'מנהלת פרויקט, רמת גן',
-    text: 'הצוות הגיע בזמן, התקין את כל כיסויי הלובי במהלך יום אחד, והסיר הכל נקי לגמרי. הדיירים לא התלוננו — וזה הכי חשוב.',
+    text: placeholderText,
   },
   {
     id: '3',
-    author: 'יוסי מזרחי',
+    author: 'יוסי מ.',
     location: 'יזם נדל"ן, הרצליה',
-    text: 'בפרויקטים שלנו אנחנו לא מתפשרים על איכות. Ancover סיפקו הגנה על חלונות ויטרינה ופרופילי אלומיניום — בלי שריטה אחת.',
+    text: placeholderText,
   },
   {
     id: '4',
-    author: 'רונית לוי',
+    author: 'רונית ל.',
     location: 'מעצבת פנים, ירושלים',
-    text: 'הלקוחות שלי מבקשים שהפרקט והדלתות יישארו מושלמים לאורך כל השיפוץ. Ancover נותנים לי שקט נפשי — המוצרים נראים טוב ועובדים מעולה.',
+    text: placeholderText,
   },
   {
     id: '5',
-    author: 'עמית שפירא',
+    author: 'עמית ש.',
     location: 'קבלן גמר, חיפה',
-    text: 'השירות מקצועי, המחיר הוגן, וההתקנה מהירה. חוסכים לנו תביעות מדיירים על נזקים — ההשקעה משתלמת.',
+    text: placeholderText,
   },
   {
     id: '6',
-    author: 'נועה ברק',
+    author: 'נועה ב.',
     location: 'מנהלת תפעול, פתח תקווה',
-    text: 'הזמנו חבילת הגנה מלאה לפרויקט שיפוץ בבניין מאוכלס — דלתות, ריצוף לובי וחלונות. הכל בוצע בדייקנות ובזמן.',
+    text: placeholderText,
   },
   {
     id: '7',
-    author: 'אלי גרינברג',
+    author: 'אלי ג.',
     location: 'קבלן שיפוצים, באר שבע',
-    text: 'הכיסויים עמידים לטיח וצבע, וההסרה בסוף לא השאירה שום סימן. כבר הזמנתי אותם לפרויקט הבא.',
+    text: placeholderText,
   },
   {
     id: '8',
     author: 'שרה מ.',
     location: 'יזמית, מודיעין',
-    text: 'בפרויקט דירות יוקרה הגנה על פרקט ושיש בלובי היא קריטית. Ancover עמדו בלוחות זמנים צפופים וסיפקו תוצאה מצוינת.',
+    text: placeholderText,
   },
 ]
 
-export const INITIAL_REVIEWS_COUNT = 8
+export const INITIAL_REVIEWS_COUNT = 4
 export const MOBILE_INITIAL_REVIEWS_COUNT = 4

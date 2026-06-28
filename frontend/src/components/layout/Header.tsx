@@ -34,13 +34,8 @@ export function Header() {
               src={siteConfig.logo}
               alt={siteConfig.businessName}
               className="header__logo-img"
-              width={40}
-              height={40}
+              height={48}
             />
-            <span className="header__logo-text">
-              <span className="header__logo-name">{siteConfig.headerBrand}</span>
-              <span className="header__logo-sub">{siteConfig.headerSubbrand}</span>
-            </span>
           </a>
 
           <nav className="header__nav" aria-label="ניווט ראשי">

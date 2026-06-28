@@ -26,7 +26,7 @@
 
 .process__card:hover {
   background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(0, 184, 232, 0.3);
+  border-color: var(--color-gold-border);
 }
 
 .process__step-header {

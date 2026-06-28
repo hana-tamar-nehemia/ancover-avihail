@@ -12,7 +12,7 @@ export function CtaBanner() {
         <div className="cta-banner__inner">
           <div className="cta-banner__icon" aria-hidden="true">⏱</div>
           <div className="cta-banner__text">
-            <h2 className="cta-banner__title">כל יום בלי הגנה — זה סיכון</h2>
+            <h2 className="cta-banner__title">כל יום בלי הגנה - זה סיכון</h2>
             <p className="cta-banner__subtitle">
               נזק לגימורים יוקרתיים עלול לגרום לעיכובים של שבועות ועלויות של עשרות אלפי שקלים.
               התחילו את תוכנית ההגנה היום.

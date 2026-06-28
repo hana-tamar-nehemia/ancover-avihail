@@ -1,4 +1,4 @@
-import { navItems, siteConfig, footerStats, serviceAreas } from '../../data/site'
+import { navItems, siteConfig, serviceAreas } from '../../data/site'
 import './Footer.css'
 
 const productLinks = [
@@ -17,16 +17,21 @@ export function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#home" className="footer__logo">
-            <img src={siteConfig.logo} alt={siteConfig.businessName} width={36} height={36} />
+            <span className="footer__logo-img-wrap">
+              <img
+                src={siteConfig.logo}
+                alt={siteConfig.businessName}
+                className="footer__logo-img"
+                height={44}
+              />
+            </span>
             <span>
-              <span className="footer__logo-name">{siteConfig.headerBrand}</span>
               <span className="footer__logo-sub">{siteConfig.headerSubbrand}</span>
             </span>
           </a>
           <p className="footer__desc">{siteConfig.description}</p>
           <div className="footer__contact">
             <a href={`tel:+${siteConfig.phoneRaw}`}>{siteConfig.phone}</a>
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
           </div>
         </div>
 
@@ -59,14 +64,6 @@ export function Footer() {
               <li key={area}>{area}</li>
             ))}
           </ul>
-        </div>
-      </div>
-
-      <div className="container">
-        <div className="footer__stats">
-          {footerStats.map((stat) => (
-            <span key={stat} className="footer__stat-pill">{stat}</span>
-          ))}
         </div>
       </div>
 

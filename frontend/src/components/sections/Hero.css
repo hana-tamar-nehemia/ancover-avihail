@@ -24,12 +24,12 @@
 .hero__overlay {
   position: absolute;
   inset: 0;
-  /* gradient כהה רק בצד הטקסט (ימין ב-RTL) — התמונה נשארת גלויה משמאל */
+  /* gradient כהה רק בצד הטקסט (ימין ב-RTL) - התמונה נשארת גלויה משמאל */
   background: linear-gradient(
     to left,
-    rgba(10, 22, 40, 0.1) 0%,
-    rgba(10, 22, 40, 0.45) 38%,
-    rgba(10, 22, 40, 0.72) 100%
+    rgba(45, 45, 45, 0.08) 0%,
+    rgba(45, 45, 45, 0.48) 38%,
+    rgba(45, 45, 45, 0.78) 100%
   );
 }
 
@@ -47,7 +47,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-cyan-bright);
+  color: var(--color-gold-bright);
   margin-bottom: 1.25rem;
 }
 
@@ -64,7 +64,7 @@
 
 .hero__title-accent {
   display: block;
-  color: var(--color-cyan-bright);
+  color: var(--color-gold-bright);
 }
 
 .hero__subline {
@@ -88,52 +88,68 @@
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 2.5rem;
+  align-items: stretch;
+  gap: 1rem;
+  max-width: 520px;
 }
 
-.hero__cta-group {
+.hero__cta-group,
+.hero__contact {
+  flex: 1 1 0;
+  min-width: 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .hero__cta-btn {
-  padding: 1rem 1.75rem;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
   font-size: 0.85rem;
 }
 
-.hero__cta-hint {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.hero__contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding-top: 0.25rem;
-}
-
-.hero__contact-label {
-  font-size: 0.72rem;
+.hero__contact-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
 }
 
-.hero__contact-phone,
-.hero__contact-email {
-  font-size: 0.95rem;
-  font-weight: 700;
+.hero__contact-box:hover {
+  transform: translateY(-1px);
+}
+
+.hero__contact-box--phone {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.hero__contact-box--phone:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.hero__contact-phone {
+  font-size: inherit;
+  font-weight: inherit;
   color: #fff;
-  transition: color 0.2s ease;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
-.hero__contact-phone:hover,
-.hero__contact-email:hover {
-  color: var(--color-cyan-bright);
+.hero__contact-box--phone:hover .hero__contact-phone {
+  color: var(--color-gold-bright);
 }
 
 @media (max-width: 600px) {
@@ -144,6 +160,13 @@
 
   .hero__actions {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+    max-width: none;
+  }
+
+  .hero__cta-group,
+  .hero__contact {
+    flex: none;
+    width: 100%;
   }
 }

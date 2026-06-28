@@ -1,15 +1,15 @@
 # Frontend
 
-אתר React — דף בית יחיד עם כל הסקשנים.
+אתר React - דף בית יחיד עם כל הסקשנים.
 
 ## מבנה `src/`
 
 | תיקייה | משמעות |
 |--------|--------|
-| `components/layout/` | Header, Footer — נשארים קבועים בכל הדף |
-| `components/sections/` | Hero, Services, Works... — בלוק תוכן אחד לכל סקשן |
+| `components/layout/` | Header, Footer - נשארים קבועים בכל הדף |
+| `components/sections/` | Hero, Services, Works... - בלוק תוכן אחד לכל סקשן |
 | `components/ui/` | רכיבים קטנים לשימוש חוזר (BeforeAfterSlider, Button...) |
-| `data/` | **כל הטקסטים** — עריכה בלי לגעת בעיצוב |
+| `data/` | **כל הטקסטים** - עריכה בלי לגעת בעיצוב |
 | `lib/` | לוגיקה (WhatsApp URLs, helpers) |
 | `styles/` | CSS גלובלי ומשתני עיצוב |
 

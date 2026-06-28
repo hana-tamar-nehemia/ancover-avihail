@@ -7,7 +7,7 @@ function workSvg(label: string, isAfter: boolean, accent: string): string {
   <rect width="800" height="600" fill="${bg}"/>
   <rect x="80" y="80" width="640" height="440" rx="8" fill="${wall}"/>
   <rect x="200" y="180" width="400" height="240" rx="4" fill="${detail}" opacity="0.6"/>
-  <text x="400" y="520" text-anchor="middle" fill="#64748b" font-size="28" font-family="Segoe UI, sans-serif">${label} — ${isAfter ? 'אחרי' : 'לפני'}</text>
+  <text x="400" y="520" text-anchor="middle" fill="#64748b" font-size="28" font-family="Segoe UI, sans-serif">${label} - ${isAfter ? 'אחרי' : 'לפני'}</text>
 </svg>`
 }
 

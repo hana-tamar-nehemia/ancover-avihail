@@ -9,27 +9,27 @@ export interface WorkItem {
 const worksImage = (filename: string) => `/images/works/${filename}`
 
 export const worksIntro =
-  'דוגמאות מהשטח — לפני ואחרי הגנה מקצועית בפרויקטי בנייה ושיפוץ'
+  'דוגמאות מהשטח - לפני ואחרי הגנה מקצועית בפרויקטי בנייה ושיפוץ'
 
 export const works: WorkItem[] = [
   {
     id: 'doors',
     title: 'הגנת דלתות כניסה',
-    description: 'כיסוי מלא לדלתות יוקרתיות במהלך עבודות גמר — ללא נזק לגימור.',
+    description: 'כיסוי מלא לדלתות יוקרתיות במהלך עבודות גמר - ללא נזק לגימור.',
     beforeImage: worksImage('closet-before.svg'),
     afterImage: worksImage('closet-after.svg'),
   },
   {
     id: 'windows',
     title: 'הגנת חלונות',
-    description: 'שמירה על זכוכית ופרופילים מפני טיח וצבע — בפרויקט יוקרתי.',
+    description: 'שמירה על זכוכית ופרופילים מפני טיח וצבע - בפרויקט יוקרתי.',
     beforeImage: worksImage('curtain-before.svg'),
     afterImage: worksImage('curtain-after.svg'),
   },
   {
     id: 'lobby',
     title: 'הגנת לובי בבניין מאוכלס',
-    description: 'הגנה אסתטית על ריצוף וקירות בלובי — ללא פגיעה במראה החלל.',
+    description: 'הגנה אסתטית על ריצוף וקירות בלובי - ללא פגיעה במראה החלל.',
     beforeImage: worksImage('wall-before.svg'),
     afterImage: worksImage('wall-after.svg'),
   },
@@ -50,7 +50,7 @@ export const works: WorkItem[] = [
   {
     id: 'facade',
     title: 'הגנת חזית וזכוכית',
-    description: 'כיסוי חזיתות וחלונות חוץ — עמידות לתנאי שטח וקרני UV.',
+    description: 'כיסוי חזיתות וחלונות חוץ - עמידות לתנאי שטח וקרני UV.',
     beforeImage: worksImage('tv-before.svg'),
     afterImage: worksImage('tv-after.svg'),
   },

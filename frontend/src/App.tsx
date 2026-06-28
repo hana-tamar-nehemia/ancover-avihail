@@ -1,7 +1,6 @@
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
 import { Hero } from './components/sections/Hero'
-import { TrustBar } from './components/sections/TrustBar'
 import { Process } from './components/sections/Process'
 import { Products } from './components/sections/Products'
 import { Risk } from './components/sections/Risk'
@@ -17,7 +16,6 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <TrustBar />
         <Process />
         <Products />
         <Risk />

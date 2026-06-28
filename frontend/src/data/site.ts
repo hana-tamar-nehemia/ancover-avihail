@@ -2,22 +2,19 @@
 export const siteConfig = {
   businessName: 'Ancover',
   headerBrand: 'Ancover',
-  headerSubbrand: 'Surface Protection',
-  logo: '/images/logo.jpeg',
+  headerSubbrand: 'הגנה על משטחים',
+  logo: '/images/logo-no-backround.png',
   title: 'Ancover | פתרונות הגנה מקצועיים לאתרי בנייה ושיפוץ',
-  heroEyebrow: 'מומחים להגנה על משטחים באתרי בנייה',
-  heroHeadline: 'נזק לא קורה מעצמו.',
-  heroHeadlineAccent: 'הוא קורה כשלא מגינים.',
-  heroSubline: 'התקנת הגנה זמנית על משטחים ומערכות בידוד אבק',
-  heroTagline: 'מוכח. מקצועי. אמין.',
+  heroSubline: 'מומחים להגנה על משטחים באתרי בנייה · מוכח. מקצועי. אמין.',
+  heroHeadline: 'בונים בראש שקט:',
+  heroHeadlineAccent: 'פתרונות הגנה מתקדמים באתרי בנייה ושיפוצים',
   tagline: 'פתרונות הגנה מקצועיים לאתרי בנייה ושיפוץ',
   slogan:
-    'שומרים על איכות הדלתות, החלונות, הריצוף והלוביים — מניעת נזקים, שריטות ולכלוך בזמן העבודות.',
+    'שומרים על איכות הדלתות, החלונות, הריצוף והלוביים - מניעת נזקים, שריטות ולכלוך בזמן העבודות.',
   description:
-    'מגוון פתרונות הגנה זמנית על משטחים ואלמנטים באתר הבנייה שלכם — דלתות, חלונות, ריצוף, פרקט, מדרגות, מטבחים, לוביים וחזיתות.',
+    'מגוון פתרונות הגנה זמנית על משטחים ואלמנטים באתר הבנייה שלכם - דלתות, חלונות, ריצוף, פרקט, מדרגות, מטבחים, לוביים וחזיתות.',
   phone: '053-670-8907',
   phoneRaw: '972536708907',
-  email: 'info@ancover.co.il',
   location: 'פרויקטים בנייה ושיפוץ בפריסה ארצית',
   instagram: '#',
   businessHours: [
@@ -37,27 +34,13 @@ export const siteConfig = {
   ],
   whatsappGreeting: 'שלום Ancover,',
   ctaPlanLabel: 'בנה לי תוכנית הגנה',
-  ctaPlanHint: 'ביקור בשטח · תוכנית בכתב · ללא התחייבות',
 } as const
 
 export const navItems = [
-  { label: 'שירותים', href: '#services' },
-  { label: 'ביקורות', href: '#reviews' },
   { label: 'איך זה עובד', href: '#process' },
+  { label: 'פתרונות הגנה', href: '#services' },
+  { label: 'ביקורות', href: '#reviews' },
   { label: 'צור קשר', href: '#contact' },
-] as const
-
-export const trustBarItems = [
-  'קבלנים מובילים',
-  'יזמי נדל"ן',
-  'פרויקטים מגורים',
-  'פרויקטים מסחריים',
-] as const
-
-export const footerStats = [
-  '50,000+ מ"ר מוגנים',
-  '30+ פרויקטים',
-  'צוות התקנה פנימי',
 ] as const
 
 export const serviceAreas = [

@@ -29,7 +29,7 @@ export function Reviews() {
       <div className="container">
         <header className="section__header">
           <p className="section__eyebrow">ביקורות</p>
-          <h2 className="section__title">מה אומרים הקבלנים</h2>
+          <h2 className="section__title">מה אומרים לקוחותינו</h2>
           <p className="section__subtitle">חוות דעת מקבלנים, יזמים ומנהלי פרויקטים</p>
         </header>
 

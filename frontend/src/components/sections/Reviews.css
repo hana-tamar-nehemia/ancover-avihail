@@ -16,7 +16,7 @@
 }
 
 .reviews__card:hover {
-  border-color: rgba(0, 184, 232, 0.3);
+  border-color: var(--color-gold-border);
 }
 
 .reviews__text {

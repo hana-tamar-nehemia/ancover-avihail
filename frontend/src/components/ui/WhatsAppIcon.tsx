@@ -1,4 +1,4 @@
-/** אייקון WhatsApp — SVG פשוט לשימוש חוזר */
+/** אייקון WhatsApp - SVG פשוט לשימוש חוזר */
 export function WhatsAppIcon({ size = 20 }: { size?: number }) {
   return (
     <svg

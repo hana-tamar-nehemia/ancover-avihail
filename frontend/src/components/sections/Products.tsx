@@ -32,13 +32,6 @@ export function Products() {
               <div className="products__body">
                 <h3 className="products__title">{product.title}</h3>
                 <p className="products__desc">{product.description}</p>
-                <ul className="products__surfaces">
-                  {product.surfaces.map((s) => (
-                    <li key={s} className="products__surface-tag">
-                      {s}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </a>
           ))}

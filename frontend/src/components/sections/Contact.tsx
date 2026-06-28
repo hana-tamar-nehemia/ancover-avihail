@@ -27,16 +27,6 @@ const contactItems = [
     action: null,
   },
   {
-    id: 'email',
-    icon: '✉️',
-    label: 'מייל',
-    value: siteConfig.email,
-    href: `mailto:${siteConfig.email}`,
-    external: false,
-    highlight: false,
-    action: null,
-  },
-  {
     id: 'instagram',
     icon: '📸',
     label: 'אינסטגרם',

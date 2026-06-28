@@ -78,7 +78,7 @@
   transition: opacity 0.25s ease;
 }
 
-/* מחשב — מסך עם עכבר */
+/* מחשב - מסך עם עכבר */
 @media (hover: hover) and (pointer: fine) {
   .before-after__hint--hover {
     opacity: 1;

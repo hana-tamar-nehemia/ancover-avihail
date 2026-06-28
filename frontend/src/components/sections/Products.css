@@ -19,7 +19,7 @@
 .products__card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-3px);
-  border-color: rgba(0, 184, 232, 0.35);
+  border-color: var(--color-gold-border);
 }
 
 .products__image-wrap {
@@ -53,23 +53,6 @@
   line-height: 1.55;
   color: var(--color-text-light);
   flex: 1;
-}
-
-.products__surfaces {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.25rem;
-}
-
-.products__surface-tag {
-  font-size: 0.68rem;
-  font-weight: 600;
-  padding: 0.2rem 0.55rem;
-  background: rgba(0, 184, 232, 0.08);
-  color: var(--color-cyan-dark);
-  border-radius: 999px;
-  border: 1px solid rgba(0, 184, 232, 0.2);
 }
 
 @media (max-width: 1100px) {
