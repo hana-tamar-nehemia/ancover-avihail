@@ -10,7 +10,7 @@ export function Hero() {
     <section id="home" className="hero">
       <div className="hero__bg">
         <img
-          src="/images/hero-bg.svg"
+          src="/images/hero-bg.jpg"
           alt=""
           className="hero__bg-img"
           aria-hidden="true"
