@@ -12,9 +12,15 @@ export function Hero() {
     <section id="home" className="hero">
       <div className="hero__bg">
         <img
-          src="/images/hero2.png"
+          src={siteConfig.heroImage}
           alt=""
-          className="hero__bg-img"
+          className="hero__bg-img hero__bg-img--desktop"
+          aria-hidden="true"
+        />
+        <img
+          src={siteConfig.heroImageMobile}
+          alt=""
+          className="hero__bg-img hero__bg-img--mobile"
           aria-hidden="true"
         />
         <div className="hero__overlay" aria-hidden="true" />

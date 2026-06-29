@@ -4,6 +4,8 @@ export const siteConfig = {
   headerBrand: 'Ancover',
   headerSubbrand: 'הגנה על משטחים',
   logo: '/images/logo-no-backround.png',
+  heroImage: '/images/hero2.png',
+  heroImageMobile: '/images/hero-bg.jpg',
   title: 'Ancover | פתרונות הגנה מקצועיים לאתרי בנייה ושיפוץ',
   heroSubline: 'מומחים להגנה על משטחים באתרי בנייה · מוכח. מקצועי. אמין.',
   heroHeadline: 'בונים בראש שקט:',

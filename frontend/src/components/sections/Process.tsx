@@ -7,7 +7,7 @@ export function Process() {
       <div className="container">
         <header className="section__header">
           <p className="section__eyebrow">{processIntro.eyebrow}</p>
-          <h2 className="section__title process__title">{processIntro.title}</h2>
+          <h2 className="process__title">{processIntro.title}</h2>
           <p className="process__body">{processIntro.body}</p>
         </header>
 
