@@ -1,6 +1,12 @@
-.process__subtitle-accent {
-  color: var(--color-cyan-bright) !important;
-  font-weight: 500;
+.process__title {
+  font-size: clamp(1.3rem, 2.8vw, 1.65rem);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--color-cyan-bright);
+  max-width: 640px;
+  margin-inline: auto;
+  line-height: 1.6;
 }
 
 .process__body {

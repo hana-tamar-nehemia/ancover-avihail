@@ -41,7 +41,7 @@ export const protectionProducts: ProtectionProduct[] = [
     id: 'stairs',
     title: 'הגנת מדרגות',
     description: 'הגנה על מדרגות שיש, עץ או אבן - מניעת שריטות וסדקים בזמן עבודות גמר.',
-    image: '/images/works/stairs2.jpeg',
+    image: '/images/works/stairs4.jpeg',
   },
   {
     id: 'walls',
@@ -54,7 +54,7 @@ export const protectionProducts: ProtectionProduct[] = [
     title: 'הגנת לובי וחלל',
     description:
       'פתרון אסתטי ומכובד ללוביים בבניינים מאוכלסים - קלות התקנה והסרה נקייה.',
-    image: '/images/works/floor2.jpeg',
+    image: '/images/works/lobi.jpeg',
   },
   {
     id: 'kitchen',
