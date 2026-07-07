@@ -28,7 +28,7 @@ export const protectionProducts: ProtectionProduct[] = [
     title: 'הגנת חלונות',
     description:
       'שמירה על זכוכית ופרופילי אלומיניום מפני טיח, צבע ושריטות - עמידות ל-UV, פנים וחוץ.',
-    image: img('windows.svg'),
+    image: '/images/works/windows.jpg',
   },
   {
     id: 'floors',
@@ -60,7 +60,7 @@ export const protectionProducts: ProtectionProduct[] = [
     id: 'kitchen',
     title: 'הגנת מטבחים וארונות',
     description: 'כיסוי ארונות, משטחי עבודה ומכשירים - הגנה מלאה במהלך שיפוץ מטבח.',
-    image: img('kitchen.svg'),
+    image: '/images/works/closet.jpeg',
   },
   {
     id: 'exterior',
